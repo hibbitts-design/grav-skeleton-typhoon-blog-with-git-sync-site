@@ -1,0 +1,17 @@
+# Grav Specific
+data/*
+!data/.*
+accounts/*
+!accounts/.*
+plugins/svg-icons/*
+!plugins/svg-icons/.*
+themes/typhoon/*
+!themes/typhoon/.*
+config/security.yaml
+
+# OS Generated
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+*.swp
