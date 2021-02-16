@@ -447,7 +447,7 @@ form:
               label: 'Location of Git Sync Link'
               default: page
               options:
-                page: 'Page (visible when ''Chromeless'')'
+                page: Page
                 none: None
             type_of_git_sync_repo_link:
               type: select
