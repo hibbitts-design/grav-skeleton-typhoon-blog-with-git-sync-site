@@ -79,9 +79,9 @@ pages:
   last_modified: false
   etag: true
   vary_accept_encoding: false
-  redirect_default_route: false
   redirect_default_code: 302
   redirect_trailing_slash: true
+  redirect_default_route: false
   ignore_files:
     - .DS_Store
   ignore_folders:
@@ -120,6 +120,8 @@ twig:
   autoescape: false
   undefined_functions: true
   undefined_filters: true
+  safe_functions: {  }
+  safe_filters: {  }
   umask_fix: false
 assets:
   css_pipeline: false
@@ -133,6 +135,7 @@ assets:
   js_pipeline_before_excludes: true
   js_minify: true
   enable_asset_timestamp: false
+  enable_asset_sri: false
   collections:
     jquery: 'system://assets/jquery/jquery-2.x.min.js'
 errors:
@@ -156,6 +159,10 @@ images:
   debug: false
   auto_fix_orientation: true
   seofriendly: false
+  cls:
+    auto_sizes: false
+    aspect_ratio: false
+    retina_scale: 1
   defaults:
     loading: auto
 media:
